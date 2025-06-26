@@ -1,7 +1,7 @@
 declare module 'qrcode.react' {
   import * as React from 'react';
 
-  interface QRCodeProps {
+  export interface QRCodeProps {
     value: string;
     size?: number;
     bgColor?: string;
@@ -19,7 +19,5 @@ declare module 'qrcode.react' {
     };
   }
 
-  const QRCode: React.FC<QRCodeProps>;
-
-  export default QRCode;
+  export const QRCodeCanvas: React.FC<QRCodeProps>;
 }
